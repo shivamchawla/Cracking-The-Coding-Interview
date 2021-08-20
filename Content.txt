@@ -2,5 +2,34 @@ Cracking-The-Coding-InterView
 
 	Content
 
-		Chapter one -- Introduction
-		Chapter two -- 
+		Introduction
+			Chapter 00 -- The Interview Process
+			Chapter 00 -- Special Situations
+			Chapter 00 -- Before The Interview
+			Chapter 00 -- Behavioral Questions
+			Chapter 00 -- Big O
+			Chapter 00 -- Technical Questions
+
+		InterView Questions
+			Chapter 01 -- Arrays and Strings
+			Chapter 02 -- Linked Lists
+			Chapter 03 -- Stacks and Queues
+			Chapter 04 -- Trees and Graphs
+
+		Concepts and Algorithms
+			Chapter 05 -- Bit Manipulation
+			Chapter 06 -- Math and Logic Puzzles
+			Chapter 07 -- OOPS
+			Chapter 08 -- Recursion and Dynamic Programming
+			Chapter 10 -- Sorting and Searching
+
+		Knowledge Based
+			Chapter 12 -- C and C++ 
+			Chapter 13 -- Java
+			Chapter 14 -- Databases
+			Chapter 15 -- Threads and Locks
+ 
+		Additional Review Problems
+			Chapter 16 -- Moderate
+			Chapter 17 -- Hard
+		
