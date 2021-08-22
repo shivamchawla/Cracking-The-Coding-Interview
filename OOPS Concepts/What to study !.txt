@@ -1,11 +1,11 @@
 What to study ?? 
 	Well , we have
-		1.Inheritance
+		1.Inheritance -- Done
 		2.Multiple Inheritance
 		3.Abstraction
 		4.Polymorphism
 		5.Final, finally and ?
-		6.Super keyword and super method ?
+		6.Super keyword and super method ? -- Done
 		7.Access specifier -> public, private, and protected
 		8.Overriding and overloading
 		9.Encapsulation

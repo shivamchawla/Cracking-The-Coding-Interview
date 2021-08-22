@@ -1,0 +1,57 @@
+Multiple Inheritance -- 
+	Multiple inheritance is when there is more than one parent class.
+Example -- 
+	class Dinosaur:
+		def __init__(self, size, weight):
+			self.size = size
+			self.weight = weight
+
+	class Carnivore:
+		def __init__(self, diet):
+			self.diet = diet 
+
+	class Tyrannosaurus(Dinosaur, Carnivore):
+		pass
+	#Multiple Inherited
+tiny = Tyrannosaurus(12, 14, "whatever it wants")
+
+What went wrong!?
+In multiple inheritance, there are two __init__ methods (one from each parent) that the class Tyrannosaurus 
+inherits. Python is not sure how to take the list of parameters for tiny and divide them between two __init__
+methods. That is why you saw an error message when you ran your code.
+
+try this -- 
+tiny = Tyrannosaurus(12, 14)
+print(tiny.size)
+
+Whoo hoo, it works!! . 
+The Tyrannosaurus class inherits from two classes. One parent has two parameters for its constructor, while other
+has one parameter. Python throws an error when three parameters are passed to Tyrannosaurus, but runs just fine 
+when two parameters are passed. Look at it , how Tyrannosaurus class was defined!
+
+	class Tyrannosaurus(Dinosaur, Carnivore):
+		pass
+
+Dinosaur is listed as the first parent class, so python uses the construtor from the Dinosaur class. Since 
+dinosaur takes two parameters, the Tyrannosaurus class works with two parameters!.
+
+
+Inorder to have access to attributes from all the parent classes, you need to override the __init__ method of 
+the child class.
+
+The below code doesnot work as python doesnt know if super() is referring to Dinosaur class or the Carnivore class.
+		class Tyrannosaurus(Dinosaur, Carnivore):
+			def __init__(self, size, weight, diet):
+				super().__init__(size, weight)
+				super().__init__(diet)
+
+Overriding the __init__ method for parent class requires a unique structure. Instead of super() use the name of 
+the class. You must pass self to the parent __init__ method.
+
+		class Tyrannosaurus(Dinosaur, Carnivore):
+			def __init__(self, size, weight, diet):
+				Dinosaur.__init__(self, size, weight)
+				Carnivore.__init__(self, diet)
+
+
+
