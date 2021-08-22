@@ -1,0 +1,82 @@
+1. Inheritance -
+	Use case - suppose we have two classes 'Person' and 'SuperHero'
+	Person Class:			SuperHero Class:
+		name				name
+		age				age
+		Occupation			Occupation
+						secret_identity
+						nemesis
+		say_hello()			say_hello()
+		say_age()			say_age()
+						reveal_secret_identity()
+
+			NO INHERITANCE Above
+		
+If the 'Person' class already exists, it would be helpful to "Borrow" from the Person class so you only have to
+create the new attributes and methods for the 'SuperHero' class.
+
+The situation decribes the Inheritance - one copies the attributes and methods from another class.
+	class Person:			class SuperHero(Person):
+		pass				pass
+
+METHOD RESOULTION ORDER -- This shows the steps Python takes with inheritance. Python first starts with the 
+SuperHero class. So when you say print(hero.name), python will look to the SuperHero class for the attribute
+name. This doesnot exist. So python moves to the next step, which is the person class. Since the Person class has
+a name attribute, python can stop here. Notice too that the say_name method and say_age method are also inherited.
+
+Limitations of Inheritance:
+		a.Inheritance needs more time to process, as it needs to navigate through multiple classes for 
+		  its implementation.
+		b.The classes involved in Inheritance - the base class and the child class , are very tightly 
+		  coupled together. So if one need to make some changes, they might need to do nested changes in 
+		  both classes.
+		c.Inheritance might be complex for implementation, so if not correctly implemented, this might lead
+		  to unexpected error or incorrect output.
+
+Advantages of Inheritance:
+		a.keep the implementation simpler
+		b.helps to facilitate code reuse
+
+Types of Inheritance:
+1. A --> B Single Inheritance
+2. A --> B --> C Multilevel Inheritance 
+3. A	B
+   |	|
+   \	/		{A-->C and B-->C}
+    \  /		Multiple Inheritance
+      C
+
+4. 	A
+       / \		Hierarchichal Inheritance
+      B C D		
+
+5. 	A
+       / \		As we can see, it can be seen as combination of all four of the above inheritance.
+      B   C		Hybrid Inheritance
+       \ /
+	D
+
+Super() Keyword -- 
+	Another way to call a method from a parent class (also called the super class), is to use the super() 
+keyword. Alter the end of the program to look like the following code.
+
+		class SuperHero(Person):
+			def say_hello(self):
+				super().say_hello()
+
+The super() keyword tells the python to go to the parent class; .say_hello() tells python to call this method.
+So super().say_hello() is calling say_hello() from the person class.
+
+Super() and __init__() method ?
+A child class will automatically inherit the __init__ method if it is not defined. 
+__init__ is called when an object is instantiated, and super() does not need to be used.
+However it is possible to create an __init__ method for the superhero class using super().
+
+		class SuperHero(Person):
+			def __init__(self, name, age, occupation):
+				super().__init__(name, age, occupation)
+
+The lack of self in super().__init__ is because we are not defining init method of the parent class, we are 
+calling it.
+
+ 

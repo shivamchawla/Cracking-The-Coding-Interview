@@ -1,0 +1,21 @@
+What to study ?? 
+	Well , we have
+		1.Inheritance
+		2.Multiple Inheritance
+		3.Abstraction
+		4.Polymorphism
+		5.Final, finally and ?
+		6.Super keyword and super method ?
+		7.Access specifier -> public, private, and protected
+		8.Overriding and overloading
+		9.Encapsulation
+		10.Need of OOPS
+		11.Getter and Setter
+		12.Extending and Overriding
+		13.Singleton class
+		14.Design a parking lot using OO principles
+		15.Design a datastructure using OO principles
+		16.What are classes and objects?
+		17.Exception handling
+		18.Static Keyword
+		19.Abstract classes and abstract methods
