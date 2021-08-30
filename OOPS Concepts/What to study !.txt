@@ -1,7 +1,7 @@
 What to study ?? 
 	Well , we have
 		1.Inheritance -- Done
-		2.Multiple Inheritance
+		2.Multiple Inheritance -- Done
 		3.Abstraction
 		4.Polymorphism
 		5.Final, finally and ?

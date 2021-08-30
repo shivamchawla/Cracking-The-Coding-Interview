@@ -36,7 +36,7 @@ Dinosaur is listed as the first parent class, so python uses the construtor from
 dinosaur takes two parameters, the Tyrannosaurus class works with two parameters!.
 
 
-Inorder to have access to attributes from all the parent classes, you need to override the __init__ method of 
+In order to have access to attributes from all the parent classes, you need to override the __init__ method of 
 the child class.
 
 The below code doesnot work as python doesnt know if super() is referring to Dinosaur class or the Carnivore class.

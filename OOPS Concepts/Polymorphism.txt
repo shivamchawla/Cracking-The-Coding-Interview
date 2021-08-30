@@ -1,0 +1,15 @@
+Polymorphism -- 
+It is a concept of OOPs.
+in which a single interface is applicable with different types.
+Often this means similar operations are grouped together with same name.However
+these operations with same name will produce different results.
+
+a = 5
+b = 10 
+print(a + b)
+
+c = "5"
+d = "10"
+print(c + d)
+
+Notice how the plus operator
