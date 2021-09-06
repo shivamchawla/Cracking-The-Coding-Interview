@@ -1,0 +1,54 @@
+************What is Operating System*************
+
+1960 - the software that controls the hardware.
+today - Today's hardware execute a variety of software applications. To increase hardware utilization, applications
+	are designed to execute concurrently. If these applications are not carefully programmed, they might 
+	interfere with one another. As a result, a layer of software called an OPERATING SYSTEM separates 
+	applications from the hardware they access and provides services that allow each application to
+	execute safely and effectively.
+
+The software that contains core components of the operating system is called kernel.
+
+OS can be found in devices ranging from cell phones , automobiles to personal and mainframe computers.
+In most computer system, user requests that the computer perform an action and the OS manages the software and 
+hardware to produce the desired result.
+
+OS are primarily resourse managers - they manage hardware , including processors, memory, i/o devices and 
+communication devices.
+
+1.	Do OS manage only hardware ?
+ans.    No, OS manage applications and other software abstractions, such as virtual machines.
+
+2.	What are primary purpose of an OS?
+ans.	enable application to interact with a computer's hardware
+	manage system's hardware and software resourses
+
+*****************History*****************
+
+1940  - No OS, machine lang. programs one bit at a time on rows of mechanical switches
+then, - assembly languages - used english like abbreviations to represent the basic operations of the computer
+	developed to speed the programming process.
+1950s - for IBM 701 computer introduced first OS, which executed only one job at a time, using techniques that smoothed transition
+	between jobs to obtain maximum utilization of the computer system.  
+	These early computers are called single stream batch processing systems, because programs and data were submitted in groups
+ 	or batches by loading them consecutively onto tape or disk. A job stream processor read the job control statements(that defined
+	the job) and facilitated the setup of the next job.delays and all.
+1960s - also batch processing, but efficient by running several jobs at once.Improved resource utilization by allowing one job to use the
+	processor while other jobs used peripheral devices.Multiprogramming - managed several job at once. A system's degree of multi-
+	programming indicates how many jobs can be managed at once.
+	Multiple interactive users at once. Timesharing systems were developed to support simultaneous interactive users.
+	
+	Real-time systems attempt to supply a response time within a certain bounded time period.Example - a measurement from a petroleum 
+	refinery indicating that temperatures are too high might demand immediate attention to avert an explosion. The resources of a real 
+	time system are often highly underutilized- it is more important for such systems to respond quickly than it is for them to use their
+	resources efficiently.
+ 	
+	CTSS(compatible time sharing system) by MIT, TSS(time sharing system) by IBM, Multics by MIT, CP/CMS(Control program/Conversational
+	monitor system) which eventually evolved into IBM's VM(virtual machine).
+
+	The designers of Multics were first to use 'Process' to describe a program in execution.
+	
+
+	Will be continued from page 11
+
+

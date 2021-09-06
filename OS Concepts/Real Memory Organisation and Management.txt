@@ -1,0 +1,13 @@
+*************Real Memory <==> Physical Memory************
+
+Secondary Storage -- most commonly disk and tape - provides massive, inexpensive capacity for the abundance of programs and data 
+		     that must be readily available for processing. It is however, slow and not directly accessible to processors.
+		     
+		     To be run or referenced directly, programs and data must be in main memory.
+
+		     Some systems, such as certain types of real time and embedded systems, cannot afford the overhead of the concepts
+		     of virtual memory - so to them real memory remains crucial.
+
+
+
+ 
