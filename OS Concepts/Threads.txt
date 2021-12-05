@@ -1,0 +1,77 @@
+#################### JAVA #######################
+
+JDK = Java Development kit 
+		1. Java Runtime Environment (JRE)
+		2. A Java Compiler (javac)
+
+JRE includes the code behind all the variables types and built-in functions ( ex - printLn() fn)
+It also includes JVM which allow java code to run on any platform.
+
+Javac - A compiler is a special type of program that translates programing lang. code into code that a computer 
+can execute.
+
+prog lang => compiler => translated code 
+java code => javac => byte code
+
+java code => compiler => byte code => JVM => machine code
+
+Why compiler does'nt translate the code to m/c straight away?
+JVM , it is the coolest thing of java, bcz it works differently depending on the type of OS it's on.
+Mac, Windows or even Mobile phone, all these platform need slightly differnent machine codeto work and VM will 
+translate bytecode into the correct m/c code for any platform it's on. So java program can run on any device.
+
+Compiler just creates a file(name.class(byte code)) and JVM runs that file.
+
+
+
+************"Threads"***********
+A 'thread' is a straightforward concept: 
+
+	A single sequential flow of control.
+
+In a high level lang., you normally program a thread using procedures, where procedures calls follow the 
+traditional stack discipline. Within a thread, there is at any point a single point of execution.
+
+While, having 'multiple thread' in a program means that at any instant the program has multiple point of execution, one 
+in each of its thread.
+
+A thread is like a .... a worker in a toy shop
+
+	* is an active entity
+		=> executing unit of a toy order
+	* works simultaneously with others
+		=> many workers completing toy orders
+	* require coordination
+		=> sharing of tools, parts, workstation.
+
+About the thread ... 
+
+	* is an active entity
+		=> executing unit of a process
+	* works simultaneously with others
+		=> sharing of i/o devices, CPUs, memory etc
+
+ Specifics about java about how to make a thread ... 
+
+?????????????????????????
+
+Final , Finally , Finalize ....... 
+
+Final - 
+	1. used to control whether a var, method, or class is 'changeable'
+	2. value of var cannot change
+	3. ref var cannot pt to anyother object on the heap
+	4. the method cannot be overridden.
+	5. class cannot be subclassed.(inheritance/extension not possible)
+
+Finally - 
+	1. is used in a try/catch block to ensure that a segment of code is always executed.
+	2. there is an optional finally block after the try block or after the catch block. Statement in the
+	   finally block will always be executed.
+
+Finalize - 
+	1. this method() is called by the garbage collector once it determines that no more refernce exist.
+	2. The automatic garbage collector calls the finalize() method just before actually destroying the object.
+
+
+

@@ -1,0 +1,96 @@
+Source : A seminar on Concurrent and Synchronization
+
+Concurrent Process ?
+
+Two processes are concurrent when they are executed in a way that their execution intervals overlap.
+
+	-----------                                    ---------------
+	     -----------						-------------------
+	There is concurrency				There is no concurrency
+
+What's difference between concurrency and parallelism ?
+	Concurrency 				Parallelism
+1.running and managing multiple			
+computation at the same time is 
+concurrency
+
+						for parallelism, we need multiple processors
+Adobe and samsung ask this ques.... :p
+
+Advantages of Concurrency .:
+1. Running of multiple applications
+2. Better Resource utilization
+3. Better avg response time
+4. Better performance
+
+
+Kinds of Concurrent process
+	1. Independent Process: Execution of one process does not affects the execution of other processes.
+	2. Cooperative Process: Execution of one process affects the execution of other processes.
+
+
+Interaction among processes
+	1. Access to shared resources
+		#processes sharing a resource
+		#processes access a resource
+		#Eg- printer
+
+	2.Communication
+		#process exchanging information
+		#eg - Messenger
+
+	3.Synchronization
+		#A process must wait for an event in another process
+		#eg- IRCTC ticket booking (wait for transaction then only ticket will be booked)
+
+Issues of Concurrency - 
+	1.Non Atomic
+		Operations that are non atomic but interruptible by multiple processes can cause problem
+		(atomic processes - which can't be broken down - any process which is independent of anyother process
+		non atomic process - can be subdivided)
+		1 2 3 4 5 6 7 8 9 10 processes are running , 3 4 5 6 7 are concurrent , so if a concurrent process is interruptible 
+		then entire task will be affected.
+
+	2.Race Condition
+		learn it yourself
+
+	3.Blocking
+		Processes can block waiting for resources. A process could be blocked for long period of time waiting for input from a terminal
+		If the process is required to periodically update some data, this would be very undesirable.
+
+	4. Starvation
+		It occurs when a process doesnot obtain service to progress
+	
+	5. Deadlock
+		It occurs when two processes are blocked and hence niether can proceed to execute.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
