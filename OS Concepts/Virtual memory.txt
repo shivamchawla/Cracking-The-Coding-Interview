@@ -1,0 +1,43 @@
+Virtual Memory 
+
+// background: memory heirarchy
+
+level of memory in computer system 
+
+registers
+cache 
+memory 
+disk 
+
+as we go down the level size of memory increase and speed, cost decreases
+
+// Virtual memory motivation
+
+Previous approach to memory management
+    must completely load user process in memory 
+    One large AS or to many AS -> out of memory
+    
+Observation : locality of reference
+   temporal : access memory location accessed just now
+   spatial : access memory location adjacent to locations just now
+   
+Implications: process only needs a small part of address space at any moment!
+
+// Virtual memory idea 
+
+OS and hardware produce illusion of a disk as fast as main memory
+
+Process runs when not all pages are loaded in memory
+    only keeps referenced pages in main memory
+    keep unreferenced pages on slower, cheaper backing store(disk)
+    Bring pages from disk to memory when neccessary
+    
+    
+Caches give fast access to a small number of memory locations, using associative addressing so that the cache has the ability to hold the contents of the memory locations the CPU is accessing most frequently. The current contents of the cache are managed automatically by the hardware. Caches work well because of the 
+
+principle of locality: if the CPU accesses location X at time T, it’s likely to access nearby locations in the not-too-distant future. 
+
+The cache is organized so that nearby locations can all reside in the cache simultaneously, using a simple indexing scheme to choose which cache location should be checked for a matching address. If the address requested by the CPU resides in the cache, access time is quite fast.
+
+
+
