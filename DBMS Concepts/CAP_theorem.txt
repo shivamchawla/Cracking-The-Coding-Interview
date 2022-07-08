@@ -1,0 +1,21 @@
+The CAP theorem states that it is not possible to guarantee all three of the desirable properties - 
+consistency(among replicated copies), 
+availability(of the system for read and write operations) 
+and partition tolerance(in the face of the nodes in the system being partitioned by a network fault) 
+
+at the same time in a distributed system with data replication.
+
+
+Sharding --> Sharding is one of several popular methods being explored by developers to increase transactional throughput. Simply stated, sharding is a way of partitioning to spread out the computational and storage workload across a peer-to-peer (P2P) network so that each node isnt responsible for processing the entire network's transactional load. Instead, each node only maintains information related to it's partition, or shard.
+
+Partitioning --> Partitioning is a powerful functionality that allows tables, indexes and index-organized tables to be subdivided into smaller pieces, enabling these database objects to be managed and accessed at a finer level of granularity.
+It increases Performances (by only working on the data that is relevant)
+Improves availablity( through individual partition manageability)
+Decreases costs (storing data in the most appropriate manner)
+easy as to impplement(as it requires no changes to applications and queries)
+
+Some partitioning methods -- 
+range partitioning - the data is distributed based on a range of values.
+list partitioning - the data distribution is defined by a discrete list of values.
+hash partitioning - an internal hash algorithm is applied to the partitioning key to determine the partition.
+etc
