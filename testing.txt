@@ -1,0 +1,20 @@
+Content: 
+    WhiteBox testing
+    BlackBox testing
+    Unit test
+    integration tests
+    automated regression testing
+    when to use which testing
+    
+    
+Validation:
+    Testing is an example of a more general process called validation. The purpose of validation is to uncover problems in a program and thereby increase your confidence in the program's correctness.
+    Validation includes:
+        Formal reasoning about the program, usually called verification. Verification constructs a formal proof that a program is correct. Verification is tedious to do by hand, and automated tool support for verification is still an active area of research. Nevertheless, small, crucial pieces of a program may be formally verified, such as the scheduler in an operating system, or the bytecode interpreter in a virtual machine, or the filesystem in an operating system.
+        Code review. Havinf somebody else carefully read your code and reason informally about it, can be a good way to uncover bugs. It's much like having somebody else proofread an essay you have written.
+        Testing. Running the program on carefully selected inputs and checking the results
+    Even with the best validation, it's very hard to achieve perfect quality in software
+    
+    residual defect rates(bugs left over after the software has shipped) (defects/kloc)(one thousand lines of source code)
+    
+    
