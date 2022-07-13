@@ -1,0 +1,6 @@
+Database Management System:
+    Provide layers of abstraction to isolate users, developers from database implementation
+    
+    Physical Layer: how values are stored/managed on disk
+    Logical Layer: specification of records and fields
+    View Level: queries and operations that users can perform (typically through application )
