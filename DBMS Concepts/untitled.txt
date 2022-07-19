@@ -3,4 +3,31 @@ Database Management System:
     
     Physical Layer: how values are stored/managed on disk
     Logical Layer: specification of records and fields
-    View Level: queries and operations that users can perform (typically through application )
+    View Level: queries and operations that users can perform (typically through application)
+    
+Vertical Scaling vs Horizontal Scaling
+
+Lets say you have a server,
+|```|
+|__|
+It can handle 100k requests everyday. Suddenly your app became very popular and the amount of users doubled! Now your server is having a hard time serving all 200k requests per day. What can you do?
+
+Vertical Scaling:
+One thing you can do is get a bigger server. If you double the size of the server it can easily handle all of the requests.
+|```|
+| . |
+| . |
+|__|
+However, your users can increase anytime and you might need to buy a bigger server yet again!
+
+Horizontal Scaling:
+Another approach is to use multiple smaller servers. This way the request load is balanced between multple servers.
+|```| |```| |```|
+|__| |__| |__|
+
+The problem with this approach is, you will need a load balancer to distribute requests between servers. There will also need to be communication between different servers, which can be slower.
+
+Which one to use then?
+Vertical Scaling has faster communication and safe read-write as everything is at a single place. Horizontal Scaling is more resilient because even if one server stops working the rest can work as a backup.
+
+In real world scenario, we might use a mixture of both or just any one of them depending on our requirements.
